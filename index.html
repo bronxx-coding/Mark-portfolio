@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Марк — Senior Designer</title>
+
+  <!-- Geologica: вариативный шрифт, веса 100–900. Лицензия OFL 1.1, кириллица есть -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+  <div class="container header__inner">
+    <a href="#" class="header__logo" aria-label="На главную">
+      <svg width="59" height="29" viewBox="0 0 59 30" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M32.9128 11.7097C33.1573 11.9542 33.5753 11.7811 33.5754 11.4353L33.578 0.388065C33.5781 0.173728 33.7519 0 33.9662 0H42.1996C42.3025 0 42.4012 0.0408909 42.474 0.113678L54.7652 12.4039C54.838 12.4767 54.9367 12.5176 55.0397 12.5176H58.6128C58.8272 12.5176 59.001 12.6914 59.001 12.9057V28.7808C59.001 28.9952 58.8272 29.1689 58.6128 29.1689H48.3493C48.2463 29.1689 48.1476 29.1281 48.0748 29.0553L34.3823 15.3628C34.1378 15.1182 33.7197 15.2914 33.7197 15.6372L33.7188 28.7808C33.7188 28.9952 33.545 29.1689 33.3306 29.1689H27.1911C27.0881 29.1689 26.9894 29.128 26.9166 29.0552L13.0835 15.2213C12.839 14.9767 12.4209 15.1499 12.4209 15.4957V28.773C12.4209 28.9873 12.2471 29.1611 12.0327 29.1611H0.388157C0.173783 29.1611 0 28.9873 0 28.773V12.9555C0 12.7412 0.173784 12.5674 0.388157 12.5674H12.0299C12.2442 12.5674 12.418 12.3936 12.418 12.1793L12.4199 0.388097C12.4199 0.173747 12.5937 0 12.808 0H21.0414C21.1443 0 21.243 0.0408908 21.3158 0.113678L32.9128 11.7097Z" fill="black"/>
+      </svg>
+    </a>
+
+    <nav class="header__nav" aria-label="Основная навигация">
+      <a href="#portfolio" class="header__link">Портфолио</a>
+      <a href="#skills"    class="header__link">Мои навыки</a>
+      <a href="#experience" class="header__link">Опыт работы</a>
+      <a href="#contacts"  class="header__link">Контакты</a>
+    </nav>
+
+    <button class="header__burger" type="button" aria-label="Открыть меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="container hero__inner">
+      
+      <div class="hero__card glass"
+           data-bubble="left" data-tail-h="72" data-tail-w="76" data-radius="12">
+        <h1 class="hero__title">
+          <span class="hero__line hero__line--dark">Привет, я — Марк,</span>
+          <span class="hero__line hero__line--accent">Senior Designer</span>
+          <span class="hero__line hero__line--accent">с опытом более 7 лет</span>
+        </h1>
+      </div>
+
+      <div class="hero__bottom">
+        <div class="hero__rings" aria-hidden="true">
+        <span class="hero__rings-text">Нажми на кнопку «Привет!», чтобы связаться со мной!</span>
+        <div class="hero__rings-stack">
+          <span class="hero__ring hero__ring--lg"></span>
+          <span class="hero__ring hero__ring--md"></span>
+          <span class="hero__ring hero__ring--sm"></span>
+          <svg class="hero__rings-icon" width="40" height="40" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.79214 10.9093C7.25 12.4515 7.25 14.9335 7.25 19.8976C7.25 24.8617 7.25 27.3438 8.79214 28.8859C10.3343 30.428 12.8163 30.428 17.7804 30.428H23.0456C28.0097 30.428 30.4918 30.428 32.0339 28.8859C33.5761 27.3438 33.5761 24.8617 33.5761 19.8976C33.5761 14.9335 33.5761 12.4515 32.0339 10.9093C30.4918 9.36719 28.0097 9.36719 23.0456 9.36719H17.7804C12.8163 9.36719 10.3343 9.36719 8.79214 10.9093ZM29.0693 14.0004C29.4183 14.4193 29.3617 15.0418 28.9428 15.3908L26.0517 17.8002C24.8849 18.7724 23.9393 19.5605 23.1046 20.0973C22.2352 20.6565 21.3885 21.0098 20.413 21.0098C19.4375 21.0098 18.5909 20.6565 17.7214 20.0973C16.8868 19.5605 15.9412 18.7724 14.7745 17.8002L11.8832 15.3908C11.4643 15.0418 11.4078 14.4193 11.7568 14.0004C12.1059 13.5815 12.7284 13.5249 13.1472 13.874L15.989 16.2421C17.217 17.2655 18.0696 17.9737 18.7895 18.4366C19.4862 18.8848 19.9588 19.0353 20.413 19.0353C20.8673 19.0353 21.3398 18.8848 22.0366 18.4366C22.7564 17.9737 23.609 17.2655 24.8371 16.2421L27.6789 13.874C28.0977 13.5249 28.7202 13.5815 29.0693 14.0004Z" fill="#7B59C0"/>
+          </svg>
+        </div>
+      </div>
+
+        <div class="hero__buttons">
+          <a href="https://t.me/x_mark_2" target="_blank" rel="noopener" class="btn btn--light"
+   data-bubble="right" data-tail-h="28" data-tail-w="56" data-radius="10" data-stroke="4">Привет!</a>
+          <a href="#portfolio" class="btn btn--accent">К портфолио</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ НАПРАВЛЕНИЯ ============ -->
+ <section class="directions" id="skills">
+    <div class="container directions__inner">
+      <div class="title_oversize">Мои навыки</div>
+
+      <!-- Общий ряд: шире контейнера, скроллится драгом с затуханием по краям -->
+      <div class="directions__row" data-drag-scroll>
+
+        <!-- Направления: теги внутри карточки -->
+        <div class="directions__card directions__card--white directions__card--main">
+          <div class="directions__header">
+            <h2 class="directions__title">Направления</h2>
+            <div class="directions__meta">
+              <span class="directions__star" aria-hidden="true"></span>
+              <span class="directions__meta-text">Основные рабочие</span>
+              <span class="directions__star" aria-hidden="true"></span>
+            </div>
+          </div>
+
+          <div class="directions__tags">
+            <div class="directions__tags">
+              <span class="tag">Digital и графический дизайн</span>
+              <span class="tag">3D-дизайн</span>
+              <span class="tag">UX/UI</span>
+              <span class="tag">Бренд-дизайн</span>
+              <span class="tag">Motion 2D + 3D</span>
+              <span class="tag">Полиграфия</span>
+              <span class="tag">Рекламный дизайн SMM</span>
+              <span class="tag">Digital-art</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ИИ-инструменты -->
+        <div class="directions__card directions__card--ai directions__card--glass">
+          <div class="directions__header">
+            <h2 class="directions__title">ИИ-инструменты</h2>
+            <div class="directions__meta">
+              <span class="directions__star" aria-hidden="true"></span>
+              <span class="directions__meta-text directions__meta-text--muted">Основное</span>
+              <span class="directions__star" aria-hidden="true"></span>
+            </div>
+          </div>
+
+          <div class="directions__tags">
+            <span class="tag">Higgsfield</span>
+            <span class="tag">Magnific (Freepik)</span>
+            <span class="tag">Adobe FireFly</span>
+            <span class="tag">NanoBanana Pro</span>
+            <span class="tag">SeeDream 5</span>
+            <span class="tag">Kling AI</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Софт -->
+      <div class="directions__card directions__card--glass">
+        <div class="directions__header">
+          <h2 class="directions__title">Софт</h2>
+          <div class="directions__meta">
+            <span class="directions__star" aria-hidden="true"></span>
+            <span class="directions__meta-text directions__meta-text--muted">Основные рабочие</span>
+            <span class="directions__star" aria-hidden="true"></span>
+          </div>
+        </div>
+
+        <div class="directions__soft" data-drag-scroll><nav class="header__nav" aria-label="Основная навигация"></nav>
+          <div class="directions__soft-item"><img src="img/soft/figma.png" alt="Figma"><span>Figma</span></div>
+          <div class="directions__soft-item"><img src="img/soft/photoshop.png" alt="Photoshop"><span>Photoshop</span></div>
+          <div class="directions__soft-item"><img src="img/soft/blender.png" alt="Blender"><span>Blender</span></div>
+          <div class="directions__soft-item"><img src="img/soft/illustrator.png" alt="Illustrator"><span>Illustrator</span></div>
+          <div class="directions__soft-item"><img src="img/soft/after-effects.png" alt="After Effects"><span>After effects</span></div>
+          <div class="directions__soft-item"><img src="img/soft/indesign.png" alt="InDesign"><span>InDesign</span></div>
+          <div class="directions__soft-item"><img src="img/soft/zbrush.png" alt="ZBrush"><span>ZBrush</span></div>
+          <!-- Имена последних пунктов экспорт побил (Xnj-nj) — проверь в макете -->
+          <div class="directions__soft-item">
+            <img src="img/soft/substance.png" alt="Substance 3D painter">
+            <span class="soft-name">
+              <span class="soft-name__short">Substance</span>
+              <span class="soft-name__full">Substance 3D painter</span>
+            </span>
+          </div>
+          <div class="directions__soft-item">
+            <img src="img/soft/marvelous.png" alt="Marvelous Designer">
+            <span class="soft-name">
+              <span class="soft-name__short">Marvelous</span>
+              <span class="soft-name__full">Marvelous Designer</span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ ПОРТФОЛИО ============ -->
+<section class="portfolio" id="portfolio">
+
+  <!-- КЕЙС 1: Ozon hot&fresh -->
+  <section class="case" data-case="ozon">
+    <div class="case__slider">
+      <div class="case__slide"><img src="img/port/ozon/ozon1.png" alt=""></div>
+      <div class="case__slide"><img src="img/port/ozon/ozon2.png" alt=""></div>
+      <div class="case__slide"><img src="img/port/ozon/ozon3.png" alt=""></div>
+    </div>
+    <button class="case__arrow case__arrow--left" type="button" aria-label="Предыдущий слайд">
+      <svg width="64" height="64" viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M40 16 L24 32 L40 48" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button class="case__arrow case__arrow--right" type="button" aria-label="Следующий слайд">
+      <svg width="64" height="64" viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M24 16 L40 32 L24 48" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="case__info">
+      <h3 class="case__info-title">Ozon hot&fresh</h3>
+      <div class="case__info-tags">
+        <span class="case__tag">AI-инструменты</span>
+        <span class="case__tag">Photoshop</span>
+        <span class="case__tag">Figma</span>
+      </div>
+      <p class="case__info-text">Крупный проект по запуску пиар-кампании был сделан в очень сжатые сроки, подготовил генерации/графику/макеты под печать.</p>
+      <img class="case__info-icon" src="img/info.svg" alt="">
+    </div>
+  </section>
+
+  <!-- КЕЙС 2: Ozon Seller (4 слайда) -->
+  <section class="case" data-case="ozon-seller">
+    <div class="case__slider">
+      <div class="case__slide"><img src="img/port/ozon/ozon4.png" alt=""></div>
+      <div class="case__slide"><img src="img/port/ozon/ozon5.png" alt=""></div>
+      <div class="case__slide"><img src="img/port/ozon/ozon6.png" alt=""></div>
+      <div class="case__slide"><img src="img/port/ozon/ozon7.png" alt=""></div>
+      <div class="case__slide"><img src="img/port/ozon/ozon8.png" alt=""></div>
+    </div>
+    <button class="case__arrow case__arrow--left" type="button" aria-label="Предыдущий слайд">
+      <svg width="64" height="64" viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M40 16 L24 32 L40 48" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button class="case__arrow case__arrow--right" type="button" aria-label="Следующий слайд">
+      <svg width="64" height="64" viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M24 16 L40 32 L24 48" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="case__info">
+      <h3 class="case__info-title">Ozon Seller</h3>
+      <div class="case__info-tags">
+        <span class="case__tag">3D-моделирование</span>
+        <span class="case__tag">Blender</span>
+      </div>
+      <p class="case__info-text">Вёл проект от брифа до сдачи, работал напрямую с Team-lead Ozon. Создал более 90 3D-моделей и рендеров, закрыв цели клиента в короткий срок.</p>
+      <img class="case__info-icon" src="img/info.svg" alt="">
+    </div>
+  </section>
+
+  <!-- КЕЙС 3: Халва B2C (SMM) -->
+  <section class="case" data-case="halva-b2c">
+    <div class="case__slider">
+      <div class="case__slide"><img src="img/port/halva/halva1.png" alt=""></div>
+      <div class="case__slide"><img src="img/port/halva/halva2.png" alt=""></div>
+      <div class="case__slide"><img src="img/port/halva/halva3.png" alt=""></div>
+    </div>
+    <button class="case__arrow case__arrow--left" type="button" aria-label="Предыдущий слайд">
+      <svg width="64" height="64" viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M40 16 L24 32 L40 48" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button class="case__arrow case__arrow--right" type="button" aria-label="Следующий слайд">
+      <svg width="64" height="64" viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M24 16 L40 32 L24 48" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="case__info">
+      <h3 class="case__info-title">Халва B2C</h3>
+      <div class="case__info-tags">
+        <span class="case__tag">AI-инструменты</span>
+        <span class="case__tag">Photoshop</span>
+        <span class="case__tag">Figma</span>
+      </div>
+      <p class="case__info-text">Плановые, ситуативные и спец. посты для официальных SMM-каналов. 120+ креативов создано в рамках запланированных публикаций.</p>
+      <img class="case__info-icon" src="img/info.svg" alt="">
+    </div>
+  </section>
+
+  <!-- КЕЙС 4: Халва B2C (3D) -->
+  <section class="case" data-case="halva-3d">
+    <div class="case__slider">
+      <div class="case__slide"><img src="img/port/halva/halva4.png" alt=""></div>
+      <div class="case__slide"><img src="img/port/halva/halva5.png" alt=""></div>
+      <div class="case__slide"><img src="img/port/halva/halva6.png" alt=""></div>
+    </div>
+    <button class="case__arrow case__arrow--left" type="button" aria-label="Предыдущий слайд">
+      <svg width="64" height="64" viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M40 16 L24 32 L40 48" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button class="case__arrow case__arrow--right" type="button" aria-label="Следующий слайд">
+      <svg width="64" height="64" viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M24 16 L40 32 L24 48" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="case__info">
+      <h3 class="case__info-title">Халва B2C</h3>
+      <div class="case__info-tags">
+        <span class="case__tag">3D</span>
+        <span class="case__tag">Blender</span>
+        <span class="case__tag">Photoshop</span>
+        <span class="case__tag">Figma</span>
+      </div>
+      <p class="case__info-text">Полноценные 3D-композиции с нуля: моделинг, рендер, цветокоррекция в Photoshop и Figma. Создал 20+ комплексных 3D-сцен.</p>
+      <img class="case__info-icon" src="img/info.svg" alt="">
+    </div>
+  </section>
+
+  <!-- КЕЙС 5: Магнит B2B -->
+  <section class="case" data-case="magnit-b2b">
+    <div class="case__slider">
+      <div class="case__slide"><img src="img/port/magnit/magnit1.png" alt=""></div>
+      <div class="case__slide"><img src="img/port/magnit/magnit2.png" alt=""></div>
+      <div class="case__slide"><img src="img/port/magnit/magnit3.png" alt=""></div>
+    </div>
+    <button class="case__arrow case__arrow--left" type="button" aria-label="Предыдущий слайд">
+      <svg width="64" height="64" viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M40 16 L24 32 L40 48" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button class="case__arrow case__arrow--right" type="button" aria-label="Следующий слайд">
+      <svg width="64" height="64" viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M24 16 L40 32 L24 48" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="case__info">
+      <h3 class="case__info-title">Магнит B2B</h3>
+      <div class="case__info-tags">
+        <span class="case__tag">AI-инструменты</span>
+        <span class="case__tag">Photoshop</span>
+        <span class="case__tag">Figma</span>
+      </div>
+      <p class="case__info-text">Крупное обновление визуального стиля. Создал гайдбук и мастер-макеты для SMM (TG, VK, OK) — единая система из 40+ шаблонов.</p>
+      <img class="case__info-icon" src="img/info.svg" alt="">
+    </div>
+  </section>
+
+  <!-- КЕЙС 6: Магнит B2C (2 слайда, описание позже) -->
+  <section class="case" data-case="magnit-b2c">
+    <div class="case__slider">
+      <div class="case__slide"><img src="img/port/magnit/magnit4.png" alt=""></div>
+      <div class="case__slide"><img src="img/port/magnit/magnit5.png" alt=""></div>
+    </div>
+    <button class="case__arrow case__arrow--left" type="button" aria-label="Предыдущий слайд">
+      <svg width="64" height="64" viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M40 16 L24 32 L40 48" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button class="case__arrow case__arrow--right" type="button" aria-label="Следующий слайд">
+      <svg width="64" height="64" viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M24 16 L40 32 L24 48" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="case__info">
+      <h3 class="case__info-title">Магнит B2C</h3>
+      <div class="case__info-tags">
+        <span class="case__tag">AI-инструменты</span>
+        <span class="case__tag">Photoshop</span>
+        <span class="case__tag">Figma</span>
+      </div>
+      <!-- описание заполним позже: вставь <p class="case__info-text">…</p> перед иконкой -->
+      <img class="case__info-icon" src="img/info.svg" alt="">
+    </div>
+  </section>
+
+  <!-- КЕЙС 7: Ozon fresh (2 слайда) -->
+  <section class="case" data-case="ozon-fresh">
+    <div class="case__slider">
+      <div class="case__slide"><img src="img/port/ozon-fresh/ozon-fresh1.png" alt=""></div>
+      <div class="case__slide"><img src="img/port/ozon-fresh/ozon-fresh2.png" alt=""></div>
+    </div>
+    <button class="case__arrow case__arrow--left" type="button" aria-label="Предыдущий слайд">
+      <svg width="64" height="64" viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M40 16 L24 32 L40 48" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button class="case__arrow case__arrow--right" type="button" aria-label="Следующий слайд">
+      <svg width="64" height="64" viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M24 16 L40 32 L24 48" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="case__info">
+      <h3 class="case__info-title">Ozon fresh</h3>
+      <div class="case__info-tags">
+        <span class="case__tag">AI-инструменты</span>
+        <span class="case__tag">Photoshop</span>
+        <span class="case__tag">Figma</span>
+      </div>
+      <p class="case__info-text">Генерации, графика, коллажи и концепт-макеты для спецпроекта fresh. Более 30 визуалов для рекламной кампании.</p>
+      <img class="case__info-icon" src="img/info.svg" alt="">
+    </div>
+  </section>
+
+  <!-- КЕЙС 8: Яндекс.Еда x ОК (2 слайда, описание позже) -->
+  <section class="case" data-case="yandex-eda">
+    <div class="case__slider">
+      <div class="case__slide"><img src="img/port/yandex-eda/yandex-eda1.png" alt=""></div>
+      <div class="case__slide"><img src="img/port/yandex-eda/yandex-eda2.png" alt=""></div>
+    </div>
+    <button class="case__arrow case__arrow--left" type="button" aria-label="Предыдущий слайд">
+      <svg width="64" height="64" viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M40 16 L24 32 L40 48" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button class="case__arrow case__arrow--right" type="button" aria-label="Следующий слайд">
+      <svg width="64" height="64" viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M24 16 L40 32 L24 48" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="case__info">
+      <h3 class="case__info-title">Яндекс.Еда x ОК</h3>
+      <div class="case__info-tags">
+        <span class="case__tag">AI-инструменты</span>
+        <span class="case__tag">Photoshop</span>
+        <span class="case__tag">Figma</span>
+      </div>
+      <!-- описание заполним позже -->
+      <img class="case__info-icon" src="img/info.svg" alt="">
+    </div>
+  </section>
+
+  <!-- КЕЙС 9: ОТП Банк (2 слайда, описание позже) -->
+  <section class="case" data-case="otp">
+    <div class="case__slider">
+      <div class="case__slide"><img src="img/port/otp/otp1.png" alt=""></div>
+      <div class="case__slide"><img src="img/port/otp/otp2.png" alt=""></div>
+    </div>
+    <button class="case__arrow case__arrow--left" type="button" aria-label="Предыдущий слайд">
+      <svg width="64" height="64" viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M40 16 L24 32 L40 48" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button class="case__arrow case__arrow--right" type="button" aria-label="Следующий слайд">
+      <svg width="64" height="64" viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M24 16 L40 32 L24 48" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="case__info">
+      <h3 class="case__info-title">ОТП Банк</h3>
+      <div class="case__info-tags">
+        <span class="case__tag">AI-инструменты</span>
+        <span class="case__tag">Photoshop</span>
+        <span class="case__tag">Figma</span>
+      </div>
+      <!-- описание заполним позже -->
+      <img class="case__info-icon" src="img/info.svg" alt="">
+    </div>
+  </section>
+
+</section>
+
+<!-- ============ ШОУРИЛ ============ -->
+<section class="showreel" id="showreel">
+  <div class="container">
+    <h2 class="experience__title showreel__title title_oversize">Шоурил</h2>
+    <div class="showreel__box">
+      <video class="showreel__video" preload="metadata" playsinline poster="video/poster.jpg">
+        <source src="video/showreel.webm" type="video/webm">
+        <source src="video/showreel.mp4" type="video/mp4">
+      </video>
+      <button class="showreel__play" type="button" aria-label="Смотреть шоурил">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="margin-left: 4px;">
+          <path d="M8 5v14l11-7z"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ОПЫТ РАБОТЫ ============ -->
+<section class="experience" id="experience">
+  <div class="container experience__inner">
+    <h2 class="experience__title title_oversize">Опыт работы</h2>
+
+    <div class="experience__list">
+
+      <article class="exp-card" data-exp="nda">
+        <div class="exp-card__main">
+          <div class="exp-card__info">
+            <h3 class="exp-card__title">Digital-агентство <span class="exp-card__nda">(NDA)</span></h3>
+            <div class="exp-card__meta">
+              <span>2025 — настоящее время</span>
+              <span class="exp-card__dot">•</span>
+              <span class="exp-card__role">Старший дизайнер</span>
+            </div>
+          </div>
+          <button class="exp-card__toggle" type="button" aria-expanded="false">Подробнее</button>
+        </div>
+        <div class="exp-card__details" hidden>
+          <p class="exp-card__lead">Крупное digital-агентство с проектами для ведущих российских брендов.</p>
+          <h4 class="exp-card__sub">Достижения</h4>
+          <ul class="exp-card__list">
+            <li>2 созданных с нуля веб-продукта (дизайн + разработка): JS web-app и Telegram mini-app</li>
+            <li>3 обучающих воркшопа и креативная сессия для отдела дизайна</li>
+            <li>Ozon Seller: более 90 3D-моделей и рендеров, работа напрямую с Team-lead Ozon, а также работа с WEB на спец. проектах</li>
+            <li>Магнит B2B: полный редизайн визуального стиля, гайдбук и система из 40+ мастер-макетов для SMM, +десятки плановых/ситуативных макетов SMM</li>
+            <li>Халва B2C: более 150 креативов для официальных SMM-каналов и десятки оформленных паков карточек для B2B</li>
+            <li>12+ специальных проектов с 3D-графикой, 30+ c 2d-материалами для WEB/SMM</li>
+            <li>Полный цикл: от согласования концепции до сдачи клиенту + супервиз работы дизайнеров</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="exp-card" data-exp="dbo">
+        <div class="exp-card__main">
+          <div class="exp-card__info">
+            <h3 class="exp-card__title">ООО «ДБО»</h3>
+            <div class="exp-card__meta">
+              <span>2024 — 2025</span>
+              <span class="exp-card__dot">•</span>
+              <span class="exp-card__role">Креативный дизайнер</span>
+            </div>
+          </div>
+          <button class="exp-card__toggle" type="button" aria-expanded="false">Подробнее</button>
+        </div>
+        <div class="exp-card__details" hidden>
+          <p class="exp-card__lead">Коммуникационное агентство, работа с крупнейшими заказчиками из госсектора: Контроль Москвы, Департамент природопользования, Министерство сельского хозяйства, ВЦХТ, ГИБДД, МВД.</p>
+          <h4 class="exp-card__sub">Достижения и обязанности</h4>
+          <ul class="exp-card__list">
+            <li>По моему дизайну произведены престижные награды, раздаточная продукция, оформление для сцен Всероссийских проектов.</li>
+            <li>Оформил 10+ проектов по фирменному стилю для компаний коммерческого и Гос. сектора. </li>
+            <li>3D-дизайн: моделирование, анимация, работа со светом и материалами</li>
+            <li>Корпоративный дизайн и брендинг: лого, фирменный стиль, упаковка для таких организаций как "Контроль Москвы", "Министерство природопользования", а также для Всероссийских проектов и не только</li>
+            <li>Дизайн печатной и цифровой продукции: листовки, буклеты, постеры, баннеры, соцсети, допечатная подготовка</li>
+            <li>Моушн-дизайн: 2D/3D-анимация, монтаж видео</li>
+            <li>Разработка креативных концепций для брендинга, упаковки, мокап-макетов</li>
+            <li>Работа с брендбуками и соблюдение стандартов визуальной идентичности</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="exp-card" data-exp="zen">
+        <div class="exp-card__main">
+          <div class="exp-card__info">
+            <h3 class="exp-card__title">«ZenGroup»</h3>
+            <div class="exp-card__meta">
+              <span>2022 — 2024</span>
+              <span class="exp-card__dot">•</span>
+              <span class="exp-card__role">Старший дизайнер / Руководитель отдела</span>
+            </div>
+          </div>
+          <button class="exp-card__toggle" type="button" aria-expanded="false">Подробнее</button>
+        </div>
+        <div class="exp-card__details" hidden>
+          <p class="exp-card__lead">Эргономичная мебель - лидер сегмента в РФ.</p>
+          <h4 class="exp-card__sub">Достижения</h4>
+          <ul class="exp-card__list">
+            <li>Руководил командой из 3 человек, выстраивал работу отдела для достижения результата в цифрах.</li>
+            <li>Организовал более 11 мастер-классов по дизайну и работе с контентом</li>
+            <li>Полностью обновил дизайн для более чем 200 товаров за 2 года</li>
+            <li>Бренды вышли в топ категорий на маркетплейсах уже в первый год</li>
+            <li>Новые товары стали бестселлерами и топовыми карточками в категориях</li>
+          </ul>
+          <h4 class="exp-card__sub">Полный цикл визуальной коммуникации</h4>
+          <ul class="exp-card__list">
+            <li>Фото/видеосъемка, обработка, ретушь, монтаж, цветокоррекция</li>
+            <li>Инфографика, фото 360°, видеообложки, 3D-графика</li>
+            <li>Дизайн-макеты для упаковки, документации, печатных материалов</li>
+            <li>Работа с CMS Bitrix, 1С, HTML/CSS</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="exp-card" data-exp="hygge">
+        <div class="exp-card__main">
+          <div class="exp-card__info">
+            <h3 class="exp-card__title">«Hygge», «Maffin»</h3>
+            <div class="exp-card__meta">
+              <span>2021 — 2022</span>
+              <span class="exp-card__dot">•</span>
+              <span class="exp-card__role">Графический дизайнер</span>
+            </div>
+          </div>
+          <button class="exp-card__toggle" type="button" aria-expanded="false">Подробнее</button>
+        </div>
+        <div class="exp-card__details" hidden>
+          <p class="exp-card__lead">Компания по продаже товаров для дома на маркетплейсах.</p>
+          <ul class="exp-card__list">
+            <li>Дизайн на основе CTR, a/b тестов - повышение показателей ~24% </li>
+            <li>Успешно оформил 2 магазина на Ozon, WB, Я.Маркет</li>
+            <li>Более 200 товаров с инфографикой на главных фотографиях и описаниях</li>
+            <li>Повысил продажи по карточкам с самыми большими продажами</li>
+            <li>Создал новые бестселлеры и дал старт новым товарам</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="exp-card" data-exp="c4b">
+        <div class="exp-card__main">
+          <div class="exp-card__info">
+            <h3 class="exp-card__title">Маркетинговое агентство C4B</h3>
+            <div class="exp-card__meta">
+              <span>2020 — 2021</span>
+              <span class="exp-card__dot">•</span>
+              <span class="exp-card__role">Графический дизайнер</span>
+            </div>
+          </div>
+          <button class="exp-card__toggle" type="button" aria-expanded="false">Подробнее</button>
+        </div>
+        <div class="exp-card__details" hidden>
+          <p class="exp-card__lead">Маркетинговое агентство: постоянное сотрудничество с косметологическими и стоматологическими клиниками, салонами красоты, работа с предпринимателями из различных сфер бизнеса.</p>
+          <h4 class="exp-card__sub">Опыт в создании</h4>
+          <ul class="exp-card__list">
+            <li>На постоянной основе работал не только с визуалом, но и с цифрами</li>
+            <li>Создавал креативы с конверсией в лиды</li>
+            <li>Создавал дизайн лендингов для рекламных кампаний для получения заявок</li>
+            <li>Лого и ФС для клиентов из различных сфер бизнеса</li>
+            <li>Печатная продукция в рамках РК</li>
+            <li>Упаковка товаров - обновление дизайна продуктов для продвижения</li>
+            <li>Афиши и другие направления для продвижения</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="exp-card" data-exp="evita">
+        <div class="exp-card__main">
+          <div class="exp-card__info">
+            <h3 class="exp-card__title">«Evita Store»</h3>
+            <div class="exp-card__meta">
+              <span>2020 — 2021</span>
+              <span class="exp-card__dot">•</span>
+              <span class="exp-card__role">Графический / WEB дизайнер</span>
+            </div>
+          </div>
+          <button class="exp-card__toggle" type="button" aria-expanded="false">Подробнее</button>
+        </div>
+        <div class="exp-card__details" hidden>
+          <p class="exp-card__lead">Интернет-магазин косметики и парфюмерии.</p>
+          <ul class="exp-card__list">
+            <li>Более 40 баннеров и креативов с эстетичным и привлекательным дизайном</li>
+            <li>Несколько десятков единиц SMM-контента</li>
+            <li>Обновил всю визуальную часть сайта и пользовательскую документацию</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="exp-card" data-exp="podruzhki">
+        <div class="exp-card__main">
+          <div class="exp-card__info">
+            <h3 class="exp-card__title">Сеть салонов лазерной эпиляции «Подружки»</h3>
+            <div class="exp-card__meta">
+              <span>2019 — 2020</span>
+              <span class="exp-card__dot">•</span>
+              <span class="exp-card__role">Графический дизайнер в отделе маркетинга</span>
+            </div>
+          </div>
+          <button class="exp-card__toggle" type="button" aria-expanded="false">Подробнее</button>
+        </div>
+        <div class="exp-card__details" hidden>
+          <ul class="exp-card__list">
+            <li>Создал более 3000 привлекающих внимание креативов</li>
+            <li>Десятки digital-макетов, единиц печатной продукции, паков оформления соцсетей</li>
+            <li>Учился на практике под руководством старшего дизайнера</li>
+            <li>Взаимодействовал с командой маркетологов на постоянной основе</li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ КОНТАКТЫ ============ -->
+<section class="contacts" id="contacts">
+  <div class="container contacts__inner">
+
+    <div class="contacts__grid">
+      <a href="https://t.me/x_mark_2" target="_blank" rel="noopener" class="contact-card">
+        <svg class="contact-card__icon" width="40" height="40" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M21.5 4.5L2.5 12L9.5 14.5L13 21L16.5 14L21.5 4.5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+        </svg>
+        <div>
+          <span class="contact-card__label">Telegram</span>
+          <span class="contact-card__value">@x_mark_2</span>
+        </div>
+      </a>
+
+      <a href="tel:+79001519594" class="contact-card">
+        <svg class="contact-card__icon" width="40" height="40" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M5 4H9L11 9L8.5 10.5C9.57 12.67 11.33 14.43 13.5 15.5L15 13L20 15V19C20 20.1 19.1 21 18 21C9.72 21 3 14.28 3 6C3 4.9 3.9 4 5 4Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+        </svg>
+        <div>
+          <span class="contact-card__label">Телефон</span>
+          <span class="contact-card__value">+7 900 151-95-94</span>
+        </div>
+      </a>
+    </div>
+
+    <p class="contacts__copy">© 2026 MARK BRONSON - SENIOR DESIGNER · <button class="legal-link" id="legal-open" type="button">Правовая информация о портфолио</button></p>
+
+  </div>
+</section>
+
+<!-- Полный просмотр кейса (мобильные) -->
+<div class="case-viewer" hidden>
+  <button class="case-viewer__close" type="button" aria-label="Закрыть просмотр">✕</button>
+  <div class="case-viewer__slider"></div>
+</div>
+
+  <div class="legal-modal" id="legal-modal" hidden role="dialog" aria-modal="true">
+  <div class="legal-modal__box">
+    <button class="legal-modal__close" id="legal-close" type="button" aria-label="Закрыть">✕</button>
+    <h3>Дисклеймер об использовании материалов портфолио</h3>
+    <ol>
+      <li>Работы, представленные на сайте, созданы мной в период трудовой деятельности.</li>
+      <li>Некоторые работы отстутствуют в целях соблюдения соглашений о неразглашении (NDA), оставшиеся опубликованы с разрешения руководства.</li>
+      <li>Я не претендую на исключительные права на результаты интеллектуальной деятельности и товарные знаки, принадлежащие третьим лицам.</li>
+      <li>Материалы используются исключительно в некоммерческих, информационных целях для демонстрации моего профессионального уровня и компетенций.</li>
+    </ol>
+    <p class="legal-modal__note">Данный ресурс является сайтом-портфолио, не предназначен для коммерческой деятельности.</p>
+  </div>
+</div>
+
+  <script src="js/bubble.js"></script>
+  <script src="js/drag-scroll.js"></script>
+  <script src="js/case-slider.js"></script>
+  <script src="js/soft-dock.js"></script>
+  <script src="js/menu.js"></script>
+
+
+<script>
+// Теги: влезают в 1–2 строки — автоперенос; появилась 3-я — ровно две строки + скролл
+(function () {
+  var st = document.createElement('style');
+  st.textContent =
+    '.directions__tags.tags--two{display:flex;flex-direction:column;gap:12px;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none;cursor:grab}' +
+    '.directions__tags.tags--two::-webkit-scrollbar{display:none}' +
+    '.directions__tags.tags--two .tags-row{display:flex;gap:12px;width:max-content}' +
+    '.directions__tags.tags--two.is-dragging{cursor:grabbing;user-select:none}';
+  document.head.appendChild(st);
+
+  var GAP = 12;
+  var lists = document.querySelectorAll('.directions__tags');
+  if (!lists.length) return;
+
+  // возврат к автопереносу: теги напрямую в контейнере
+  function flat(el) {
+    if (!el.classList.contains('tags--two')) return;
+    el.classList.remove('tags--two');
+    el.innerHTML = '';
+    el.__tags.forEach(function (t) { el.appendChild(t); });
+  }
+
+  // ровно две строки: первая половина тегов сверху, вторая снизу
+  function twoRows(el) {
+    var tags = el.__tags;
+    var ws = tags.map(function (t) { return t.offsetWidth; });
+    var total = ws.reduce(function (a, b) { return a + b; }, 0) + GAP * (tags.length - 1);
+    var target = total / 2;
+    var rowA = document.createElement('div');
+    var rowB = document.createElement('div');
+    rowA.className = 'tags-row';
+    rowB.className = 'tags-row';
+    var cur = 0;
+    tags.forEach(function (t, i) {
+      if (rowA.children.length && cur + GAP + ws[i] > target) {
+        rowB.appendChild(t);
+      } else {
+        cur += (rowA.children.length ? GAP : 0) + ws[i];
+        rowA.appendChild(t);
+      }
+    });
+    el.classList.add('tags--two');
+    el.innerHTML = '';
+    el.appendChild(rowA);
+    el.appendChild(rowB);
+  }
+
+  function update(el) {
+    if (!el.__tags) el.__tags = Array.prototype.slice.call(el.querySelectorAll('.tag'));
+    flat(el);
+    var tag = el.__tags[0];
+    if (!tag) return;
+    var two = tag.offsetHeight * 2 + GAP;
+    // автоперенос дал третью строку — включаем две строки со скроллом
+    if (el.scrollHeight > two + 4) twoRows(el);
+  }
+
+  function all() { lists.forEach(update); }
+
+  // драг мышью; палец скроллит нативно
+  lists.forEach(function (el) {
+    var down = false, sx = 0, sl = 0;
+    el.addEventListener('pointerdown', function (e) {
+      if (e.pointerType !== 'mouse' || !el.classList.contains('tags--two')) return;
+      down = true; sx = e.clientX; sl = el.scrollLeft;
+      el.classList.add('is-dragging');
+      el.setPointerCapture(e.pointerId);
+    });
+    el.addEventListener('pointermove', function (e) {
+      if (down) el.scrollLeft = sl - (e.clientX - sx);
+    });
+    function up() { down = false; el.classList.remove('is-dragging'); }
+    el.addEventListener('pointerup', up);
+    el.addEventListener('pointercancel', up);
+  });
+
+  window.addEventListener('resize', all);
+  window.addEventListener('load', function () { setTimeout(all, 50); });
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(all);
+  all();
+})();
+</script>
+
+<script>
+// Затухание краёв блока тегов — как у остальных drag-scroll блоков
+(function () {
+  var FADE = 56;
+  var st = document.createElement('style');
+  st.textContent =
+    '.directions__tags.tags--two{--fade-left:0px;--fade-right:0px;' +
+    '-webkit-mask-image:linear-gradient(to right,transparent 0,#000 var(--fade-left),#000 calc(100% - var(--fade-right)),transparent 100%);' +
+    'mask-image:linear-gradient(to right,transparent 0,#000 var(--fade-left),#000 calc(100% - var(--fade-right)),transparent 100%)}';
+  document.head.appendChild(st);
+
+  var lists = document.querySelectorAll('.directions__tags');
+
+  function update(el) {
+    if (!el.classList.contains('tags--two')) return;
+    var max = el.scrollWidth - el.clientWidth;
+    if (max <= 0) {
+      el.style.setProperty('--fade-left', '0px');
+      el.style.setProperty('--fade-right', '0px');
+      return;
+    }
+    el.style.setProperty('--fade-left', Math.min(el.scrollLeft, FADE) + 'px');
+    el.style.setProperty('--fade-right', Math.min(max - el.scrollLeft, FADE) + 'px');
+  }
+
+  function all() { lists.forEach(update); }
+
+  lists.forEach(function (el) {
+    el.addEventListener('scroll', function () { update(el); }, { passive: true });
+    // пересчитываем, когда скрипт тегов включает/выключает режим
+    if ('MutationObserver' in window) {
+      new MutationObserver(all).observe(el, { attributes: true, attributeFilter: ['class'] });
+    }
+  });
+
+  window.addEventListener('resize', all);
+  window.addEventListener('load', function () { setTimeout(all, 60); });
+  all();
+})();
+</script>
+<script src="js/legal.js"></script>
+<script>
+/* Правовая модалка на странице Марка: привязывается напрямую,
+   создаёт модалку, если разметку не добавили. Не зависит от внешних файлов. */
+(function () {
+  'use strict';
+  var openBtn = document.getElementById('legal-open');
+  if (!openBtn) return;
+
+  var modal = document.getElementById('legal-modal');
+  if (!modal) {
+    modal = document.createElement('div');
+    modal.id = 'legal-modal';
+    modal.className = 'legal-modal';
+    modal.hidden = true;
+    modal.setAttribute('role', 'dialog');
+    modal.setAttribute('aria-modal', 'true');
+    modal.innerHTML =
+      '<div class="legal-modal__box">' +
+      '<button class="legal-modal__close" type="button" aria-label="Закрыть">✕</button>' +
+      '<h3>Дисклеймер об использовании материалов портфолио</h3>' +
+      '<ol>' +
+      '<li>Работы, представленные в данном разделе, созданы специалистами нашей студии в период их трудовой или договорной деятельности в иных организациях.</li>' +
+      '<li>Некоторые проекты представлены в обезличенном виде («слепые кейсы») с удалением или размытием логотипов и идентифицирующих знаков заказчиков в целях соблюдения соглашений о неразглашении (NDA).</li>' +
+      '<li>Студия не претендует на исключительные права на результаты интеллектуальной деятельности, товарные знаки и коммерческие тайны, принадлежащие третьим лицам.</li>' +
+      '<li>Материалы используются исключительно в некоммерческих, информационных целях для демонстрации профессионального уровня компетенций наших специалистов.</li>' +
+      '</ol>' +
+      '<p class="legal-modal__note">Часть представленных проектов была реализована основателем и ведущим дизайнером студии в период работы в предыдущих компаниях и агентствах. Данные материалы демонстрируются исключительно для иллюстрации профессионального опыта и квалификации команды. Исключительные права на товарные знаки, логотипы и конечные результаты работ принадлежат их законным правообладателям.</p>' +
+      '</div>';
+    document.body.appendChild(modal);
+  }
+
+  function show() { modal.hidden = false; document.body.classList.add('no-scroll'); }
+  function hide() { modal.hidden = true; document.body.classList.remove('no-scroll'); }
+
+  openBtn.addEventListener('click', show);
+  var closeBtn = modal.querySelector('.legal-modal__close');
+  if (closeBtn) closeBtn.addEventListener('click', hide);
+  modal.addEventListener('click', function (e) { if (e.target === modal) hide(); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && !modal.hidden) hide();
+  });
+})();
+</script>
+<script src="js/showreel.js"></script>
+</body>
+</html>
